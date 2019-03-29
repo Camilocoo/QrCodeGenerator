@@ -121,7 +121,7 @@ export class Home extends React.Component {
 			<div className="w-50 d-flex justify-content-center mx-auto text-center align-self-center h-50">
 				{this.state.showQr ? (
 					<form
-						className="align-self-center border-info"
+						className="align-self-bottom border-info mt-5"
 						onSubmit={this.handleSubmit}>
 						<div className="form-group">
 							<label htmlFor="formGroupExampleInput">
