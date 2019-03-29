@@ -124,7 +124,9 @@ export class Home extends React.Component {
 						className="align-self-center border-info"
 						onSubmit={this.handleSubmit}>
 						<div className="form-group">
-							<label htmlFor="formGroupExampleInput">SSID</label>
+							<label htmlFor="formGroupExampleInput">
+								Wi-Fi Username
+							</label>
 							<input
 								type="text"
 								value={this.state.qrCode.ssid}
@@ -135,7 +137,9 @@ export class Home extends React.Component {
 							/>
 						</div>
 						<div className="form-group">
-							<label htmlFor="formGroupExampleInput2">Key</label>
+							<label htmlFor="formGroupExampleInput2">
+								Wi-Fi Password
+							</label>
 							<input
 								type="text"
 								className="form-control"
@@ -154,7 +158,10 @@ export class Home extends React.Component {
 
 				{this.state.showQr ? null : (
 					<div className="align-self-center border-info">
-						<QRCode value={JSON.stringify(this.state.qrCode)} />
+						<QRCode
+							value={JSON.stringify(this.state.qrCode)}
+							size="200"
+						/>
 					</div>
 				)}
 			</div>
